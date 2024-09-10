@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ss23wqwneewg"]
+
+[ext_resource type="Script" path="res://Scripts/CharacterController.gd" id="1_oaglp"]
+[ext_resource type="Material" uid="uid://bqty3edrty7l7" path="res://Materials/CubeMat.tres" id="2_u6vwx"]
+
+[node name="Character" type="Node3D"]
+script = ExtResource("1_oaglp")
+
+[node name="Cube" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+material_override = ExtResource("2_u6vwx")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, 6.18172e-08, -6.18172e-08, 0, 0.707107, 0.707107, 8.74228e-08, 0.707107, -0.707107, 0, 5, -5)
